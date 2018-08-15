@@ -730,11 +730,20 @@
     <rightJoint>WheelFR</rightJoint>
     <wheelSeparation>0.170</wheelSeparation>
     <wheelDiameter>0.140</wheelDiameter>
-    <torque>36.9</torque>
+<!--    <torque>36.9</torque>    -->
+    <wheelTorque>36.9</wheelTorque>
     <commandTopic>cmd_vel</commandTopic>
     <odometryTopic>odom_diffdrive</odometryTopic>
     <odometryFrame>odom</odometryFrame>
-    <robotBaseFrame>base_footprint</robotBaseFrame>
+<!--    <robotBaseFrame>base_footprint</robotBaseFrame> -->
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <rosDebugLevel></rosDebugLevel>
+    <publishWheelTF>false</publishWheelTF>
+    <publishWheelJointState>false</publishWheelJointState>
+    <wheelAcceleration>0</wheelAcceleration>
+    <odometrySource>world</odometrySource>
+    <publishTf>1</publishTf>
+    <legacyMode>true</legacyMode>
   </plugin>
 </gazebo>
 </robot>
